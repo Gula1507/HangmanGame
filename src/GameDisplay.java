@@ -4,7 +4,7 @@ public class GameDisplay {
     private HangmanPicture hangmanPicture;
     Game game;
     private static final int MAX_MISTAKE_LEVEL = 13;
-    public String cachedWord;
+    
     private List<Character> usedLetters;
 
     public GameDisplay(String cachedWord, List<Character> usedLetters) {
