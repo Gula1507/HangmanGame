@@ -20,8 +20,16 @@ public class Game {
         this.currentMistakeNumber = 0;
     }
 
+    public int getCurrentMistakeNumber() {
+        return currentMistakeNumber;
+    }
+
+    public void setCurrentMistakeNumber(int currentMistakeNumber) {
+        this.currentMistakeNumber = currentMistakeNumber;
+    }
+
     public void startGameLoop() {
-        GameDisplay gameDisplay = new GameDisplay(currentMistakeNumber, cachedWord, usedLetters);
+        GameDisplay gameDisplay = new GameDisplay(cachedWord, usedLetters);
         gameDisplay.showGameStatus();
         while (isGameProcessing()) {
             tryToGuessWord(gameDisplay);

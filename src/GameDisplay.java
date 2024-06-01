@@ -2,15 +2,15 @@ import java.util.List;
 
 public class GameDisplay {
     private HangmanPicture hangmanPicture;
-    public int currentMistakeNumber;
+    Game game;
     private static final int MAX_MISTAKE_LEVEL = 13;
     public String cachedWord;
     private List<Character> usedLetters;
 
-    public GameDisplay(int currentMistakeNumber, String cachedWord, List<Character> usedLetters) {
+    public GameDisplay(String cachedWord, List<Character> usedLetters) {
 
-        this.currentMistakeNumber = currentMistakeNumber;
-        this.hangmanPicture = new HangmanPicture(currentMistakeNumber);
+        this.game=new Game();
+        this.hangmanPicture = new HangmanPicture(game.getCurrentMistakeNumber());
         this.cachedWord = cachedWord;
         this.usedLetters = usedLetters;
     }
@@ -21,7 +21,7 @@ public class GameDisplay {
         if (usedLetters.size() > 0) {
             System.out.println("Letters that you have already used: " + usedLetters);
         }
-        hangmanPicture.setStageNumber(currentMistakeNumber);
+        hangmanPicture.setStageNumber(game.getCurrentMistakeNumber());
         hangmanPicture.drawHangman();
 
     }
@@ -38,7 +38,7 @@ public class GameDisplay {
     public void proofForMatch(String cachedWordBeforeNewMatches) {
         if (cachedWordBeforeNewMatches.equals(cachedWord)) {
             System.out.println("\nOh no, it was a false letter!");
-            currentMistakeNumber++;
+            game.setCurrentMistakeNumber(game.getCurrentMistakeNumber()+1);
         } else {
             System.out.println("\nIt was a match!");
 

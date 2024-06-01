@@ -21,6 +21,8 @@
       <change afterPath="$PROJECT_DIR$/../Ruckgabe/Ruckgabe.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UeberladungTag3/UeberladungTag3.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameDisplay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +59,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "a010ebb0",
+    "git-widget-placeholder": "ca8a3d15",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/aygul/Java Projekt/HangmanNewGula",
     "onboarding.tips.debug.path": "C:/Users/aygul/Java Projekt/HangmanNewGula/src/Main.java",
