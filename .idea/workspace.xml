@@ -14,18 +14,6 @@
       <change afterPath="$PROJECT_DIR$/../FromOthersGit/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../FromOthersGit/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../FromOthersGit/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HangmanNewGula.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HangmanPicture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JavaCore2/JavaCore2.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JavaRush/JavaRush.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JavaUdemyRus/Javangelion.iml" afterDir="false" />
@@ -48,6 +36,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -68,7 +57,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "a010ebb0",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/aygul/Java Projekt/HangmanNewGula",
     "onboarding.tips.debug.path": "C:/Users/aygul/Java Projekt/HangmanNewGula/src/Main.java",
