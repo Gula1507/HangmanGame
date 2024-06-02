@@ -20,6 +20,13 @@ public class Game {
         this.currentMistakeNumber = 0;
     }
 
+    public List<Character> getUsedLetters() {
+        return usedLetters;
+    }
+    public String getCachedWord() {
+        return cachedWord;
+    }
+
     public int getCurrentMistakeNumber() {
         return currentMistakeNumber;
     }
@@ -29,13 +36,12 @@ public class Game {
     }
 
     public void startGameLoop() {
-        GameDisplay gameDisplay = new GameDisplay(cachedWord, usedLetters);
-        gameDisplay.showGameStatus();
+        GameDisplay.showGameStatus(this);
         while (isGameProcessing()) {
-            tryToGuessWord(gameDisplay);
-            gameDisplay.showGameStatus();
+            tryToGuessWord();
+            GameDisplay.showGameStatus(this);
         }
-        gameDisplay.showGameEnd(wordToGuess);
+        GameDisplay.showGameEnd(this, wordToGuess);
     }
 
     public List<String> getWordsFromFile() {
@@ -52,7 +58,6 @@ public class Game {
         }
         return words;
     }
-
 
     public String generateWordToGuess() {
         Random r = new Random();
@@ -72,17 +77,17 @@ public class Game {
 
 
     }
+
     private boolean isGameProcessing() {
         return !cachedWord.equals(wordToGuess) && currentMistakeNumber < 13;
     }
 
-    private void tryToGuessWord(GameDisplay gameDisplay) {
+    private void tryToGuessWord() {
         String cachedWordBeforeNewMatches = cachedWord;
         char inputLetter = getInputLetter();
         inputLetter = getNewLetterIfRepeat(inputLetter);
-        gameDisplay.cachedWord  = actualiseCachedWordWithMatches(inputLetter);
-        gameDisplay.proofForMatch(cachedWordBeforeNewMatches);
-        cachedWord= gameDisplay.cachedWord;
+        cachedWord = actualiseCachedWordWithMatches(inputLetter);
+        GameDisplay.proofForMatch(this, cachedWordBeforeNewMatches);
         usedLetters.add(inputLetter);
 
     }
@@ -109,22 +114,11 @@ public class Game {
         return wordWithMatches.toString();
     }
 
-//    private int proofForMatch(String cachedWordBeforeNewMatches) {
-//        if (cachedWordBeforeNewMatches.equals(cachedWord)) {
-//            System.out.println("\nOh no, it was a false letter!");
-//            return ++currentMistakeNumber;
-//        } else {
-//            System.out.println("\nIt was a match!");
-//            return currentMistakeNumber;
-//        }
-//    }
-
     private char getNewLetterIfRepeat(char inputLetter) {
         while (usedLetters.contains(inputLetter)) {
             System.out.println("You have already used this letter. Try another one.");
             inputLetter = getInputLetter();
         }
         return inputLetter;
-
     }
 }

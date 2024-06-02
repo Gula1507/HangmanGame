@@ -21,8 +21,10 @@
       <change afterPath="$PROJECT_DIR$/../Ruckgabe/Ruckgabe.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UeberladungTag3/UeberladungTag3.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HangmanPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HangmanPicture.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +61,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "ca8a3d15",
+    "git-widget-placeholder": "GameDisplayMakeNewGame",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/aygul/Java Projekt/HangmanNewGula",
+    "last_opened_file_path": "C:/Users/aygul/Java Projekt/FromOthersGit",
     "onboarding.tips.debug.path": "C:/Users/aygul/Java Projekt/HangmanNewGula/src/Main.java",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",

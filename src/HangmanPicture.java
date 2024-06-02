@@ -1,21 +1,14 @@
 import java.util.List;
 
 public class HangmanPicture {
-    private int stageNumber;
+    public static int stageNumber;
 
-    public int getStageNumber() {
-        return stageNumber;
-    }
+//    public HangmanPicture(int stageNumber) {
+//        this.stageNumber = stageNumber;
+//    }
 
-    public void setStageNumber(int stageNumber) {
-        this.stageNumber = stageNumber;
-    }
 
-    public HangmanPicture(int stageNumber) {
-        this.stageNumber = stageNumber;
-    }
-
-    public void drawHangman() {
+    public static void drawHangman() {
         if (stageNumber > 0) {
             System.out.println("\nActualising Hangmanpicture.. \n");
         }
