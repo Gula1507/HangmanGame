@@ -3,11 +3,6 @@ import java.util.List;
 public class HangmanPicture {
     public static int stageNumber;
 
-//    public HangmanPicture(int stageNumber) {
-//        this.stageNumber = stageNumber;
-//    }
-
-
     public static void drawHangman() {
         if (stageNumber > 0) {
             System.out.println("\nActualising Hangmanpicture.. \n");

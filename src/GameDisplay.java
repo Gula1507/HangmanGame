@@ -1,17 +1,4 @@
-import java.util.List;
-
 public class GameDisplay {
-//    Game game;
-//    private static final int MAX_MISTAKE_LEVEL = 13;
-//    String cachedWord;
-//    private List<Character> usedLetters;
-
-//    public GameDisplay(String cachedWord, List<Character> usedLetters) {
-//        this.game=new Game();
-//        this.cachedWord = cachedWord;
-//        this.usedLetters = usedLetters;
-//    }
-
 
     public static void showGameStatus(Game game) {
         System.out.println("The word to guess is: " + game.getCachedWord());
@@ -32,10 +19,9 @@ public class GameDisplay {
         }
     }
 
-    public static void proofForMatch(Game game,String cachedWordBeforeNewMatches) {
+    public static void showCurrentGuess(Game game, String cachedWordBeforeNewMatches) {
         if (cachedWordBeforeNewMatches.equals(game.getCachedWord())) {
             System.out.println("\nOh no, it was a false letter!");
-            game.setCurrentMistakeNumber(game.getCurrentMistakeNumber()+1);
         } else {
             System.out.println("\nIt was a match!");
 

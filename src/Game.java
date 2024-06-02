@@ -87,7 +87,7 @@ public class Game {
         char inputLetter = getInputLetter();
         inputLetter = getNewLetterIfRepeat(inputLetter);
         cachedWord = actualiseCachedWordWithMatches(inputLetter);
-        GameDisplay.proofForMatch(this, cachedWordBeforeNewMatches);
+        GameDisplay.showCurrentGuess(this, cachedWordBeforeNewMatches);
         usedLetters.add(inputLetter);
 
     }
@@ -110,6 +110,9 @@ public class Game {
             if (wordToGuess.charAt(i) == inputLetter) {
                 wordWithMatches.setCharAt(i, inputLetter);
             }
+        }
+        if (wordWithMatches.toString().equals(cachedWord)) {
+            currentMistakeNumber++;
         }
         return wordWithMatches.toString();
     }
