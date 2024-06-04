@@ -6,7 +6,7 @@ public class GameDisplay {
             System.out.println("Letters that you have already used: " + game.getUsedLetters());
         }
         HangmanPicture.stageNumber =game.getCurrentMistakeNumber();
-        HangmanPicture.drawHangman();
+        HangmanPicture.draw();
 
     }
 

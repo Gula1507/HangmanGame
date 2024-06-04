@@ -1,38 +1,33 @@
-import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
-    private final String FILENAME_WITH_WORDS = "resources/Words.txt";
-    private String wordToGuess;
+    private final String wordToGuess;
     private String cachedWord;
-    private List<Character> usedLetters;
-    private List<String> words;
+    private final List<Character> usedLetters;
     private int currentMistakeNumber;
+    boolean isEnglishWord = true;
 
-    public Game() {
+    public Game(String filename, boolean isEnglishWord) {
         this.usedLetters = new ArrayList<>();
-        this.words = getWordsFromFile();
-        this.wordToGuess = generateWordToGuess();
-        this.cachedWord = generateCachedWord();
+        WordsGenerator wordGenerator = new WordsGenerator(filename);
+        this.wordToGuess = wordGenerator.generateWordToGuess();
+        this.cachedWord = wordGenerator.generateCachedWord(this.wordToGuess);
         this.currentMistakeNumber = 0;
+        this.isEnglishWord = isEnglishWord;
     }
 
     public List<Character> getUsedLetters() {
         return usedLetters;
     }
+
     public String getCachedWord() {
         return cachedWord;
     }
 
     public int getCurrentMistakeNumber() {
         return currentMistakeNumber;
-    }
-
-    public void setCurrentMistakeNumber(int currentMistakeNumber) {
-        this.currentMistakeNumber = currentMistakeNumber;
     }
 
     public void startGameLoop() {
@@ -42,40 +37,6 @@ public class Game {
             GameDisplay.showGameStatus(this);
         }
         GameDisplay.showGameEnd(this, wordToGuess);
-    }
-
-    public List<String> getWordsFromFile() {
-        List<String> words = new ArrayList<>();
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(FILENAME_WITH_WORDS));
-            String word = bufferedReader.readLine();
-            while (word != null) {
-                words.add(word.toUpperCase());
-                word = bufferedReader.readLine();
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return words;
-    }
-
-    public String generateWordToGuess() {
-        Random r = new Random();
-        int randomWordNumber = r.nextInt(words.size());
-        String wordToGuess = words.get(randomWordNumber);
-        return wordToGuess;
-    }
-
-    public String generateCachedWord() {
-        String cachedWord = "";
-        StringBuilder result = new StringBuilder();
-        for (int i = 0; i < wordToGuess.length(); i++) {
-            result.append("*");
-        }
-        cachedWord = result.toString();
-        return cachedWord;
-
-
     }
 
     private boolean isGameProcessing() {
@@ -89,14 +50,19 @@ public class Game {
         cachedWord = actualiseCachedWordWithMatches(inputLetter);
         GameDisplay.showCurrentGuess(this, cachedWordBeforeNewMatches);
         usedLetters.add(inputLetter);
-
     }
 
-    private static char getInputLetter() {
+    private char getInputLetter() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the letter");
         String input = sc.nextLine();
-        while (input.length() != 1 || !input.matches("[a-zA-Z]")) {
+        String acceptedLetter;
+        if (this.isEnglishWord) {
+            acceptedLetter = "[a-zA-Z]";
+        } else {
+            acceptedLetter = "[а-яА-ЯёЁ]";
+        }
+        while (input.length() != 1 || !input.matches(acceptedLetter)) {
             System.out.println("Please consider that you enter a letter");
             input = sc.nextLine();
         }

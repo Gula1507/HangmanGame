@@ -15,7 +15,6 @@ public class Start {
             System.out.println(questionToRepeat);
         }
     }
-
     public static String askToStartTheGame() {
         return askQuestionWithAnswerKeys("Do you want to start the game (Y/N)?",
                 "Please consider that you tipped 'Y' or 'N'", List.of("Y", "N")
