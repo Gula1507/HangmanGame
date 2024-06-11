@@ -18,10 +18,9 @@
       <change afterPath="$PROJECT_DIR$/../PublicUndPrivate/PublicUndPrivate.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Ruckgabe/Ruckgabe.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UeberladungTag3/UeberladungTag3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HangmanNewGula.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HangmanGame.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +75,7 @@
       <recent name="C:\Users\aygul\AppData\Roaming\JetBrains\IdeaIC2023.3\scratches" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Game">
+  <component name="RunManager">
     <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Game" />
       <module name="HangmanGame" />
