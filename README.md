@@ -1,49 +1,61 @@
-FOR ENGLISH VERSION SCROLL DOWN
+# DEUTSCHE VERSION
 
-<h1>Motivation für das Projekt</h1>
-    <p>Meine Motivation für das Hangman-Spiel liegt in dem Wunsch, meine Java-Kenntnisse durch die praktische Umsetzung eines vollständigen Programms zu vertiefen. Nachdem ich grundlegende Konzepte der Programmierung und die Theorie der objektorientierten Programmierung erlernt habe, suchte ich eine Gelegenheit, diese Kenntnisse in einem realen Kontext anzuwenden.</p>
-    
-    <p>Im Hangman-Spiel konnte ich verschiedene Aspekte von Java kombinieren und vertiefen, darunter:</p>
-    
-    <ul>
-        <li><strong>Praktische Anwendung von Java Core:</strong> Ich habe die grundlegende Syntax, Kontrollstrukturen und Datenstrukturen in einem praxisnahen Szenario genutzt und umgesetzt.</li>
-        <li><strong>Erweiterung der Kenntnisse in der Fehlerbehandlung:</strong> Die Implementierung robuster Fehlerbehandlung verbesserte meine Fähigkeit, mit unerwarteten Situationen und Benutzereingaben umzugehen.</li>
-        <li><strong>Vertiefung der objektorientierten Programmierung:</strong> Durch die Erstellung und Verwaltung von Klassen und Objekten im Rahmen eines vollständigen Spiels konnte ich meine Kenntnisse in der objektorientierten Programmierung weiter ausbauen.</li>
-        <li><strong>Entwicklung von Problemlösungsfähigkeiten:</strong> Die Herausforderung, ein funktionierendes Spiel zu erstellen, hat mein analytisches Denken und meine Fähigkeit zur Problemlösung gestärkt.</li>
-    </ul>
-    
-    <p>Dieses Projekt bot mir nicht nur eine Gelegenheit, mein Wissen zu testen, sondern ermöglichte es mir auch, eine unterhaltsame und interaktive Anwendung zu entwickeln. Auf diese Weise konnte ich die Konzepte, die ich gelernt habe, auf eine kreative und praxisorientierte Weise umsetzen.</p>
+**FOR ENGLISH VERSION SCROLL DOWN**
 
-Hangman-Spiel
+## Motivation
 
-Dieses Repository enthält eine computerbasierte Implementierung des klassischen Hangman-Spiels, das traditionell von zwei Spielern gespielt wird.
+Das Hangman-Spiel dient dazu, meine Java-Kenntnisse durch die praktische Umsetzung zu vertiefen. Nachdem ich grundlegende Programmierkonzepte und objektorientierte Theorie gelernt hatte, wollte ich diese in einem realen Projekt anwenden.
 
-In dieser Version tritt ein menschlicher Spieler gegen den Computer an, der zufällig ein Wort auswählt, das es zu erraten gilt. Der Spieler hat die Option, entweder russische oder englische Wörter zu erraten.
+Beim Hangman-Spiel konnte ich verschiedene Aspekte von Java kombinieren und vertiefen, darunter:
 
-Spielverlauf:
+- **Java Core:** Anwendung grundlegender Syntax, Kontrollstrukturen und Datenstrukturen.
+- **Fehlerbehandlung:** Verbesserung der Robustheit im Umgang mit Benutzereingaben und Fehlern.
+- **Objektorientierte Programmierung:** Erstellung und Verwaltung von Klassen und Objekten.
+- **Problemlösungsfähigkeiten:** Stärkung analytischen Denkens durch die Erstellung eines funktionierenden Spiels.
 
-Der Spieler wählt die Sprache des Wortes (Russisch oder Englisch).
-Der Spieler rät Buchstaben einzeln.
-Bei jedem geratenen Buchstaben zeigt der Computer entweder die Positionen des Buchstabens im Wort an, wenn der Buchstabe korrekt ist, oder zeichnet Teile des Galgens, wenn der Buchstabe falsch ist.
-Das Spiel wird fortgesetzt, bis der Spieler entweder das gesamte Wort korrekt errät oder die erlaubte Anzahl an Fehlversuchen aufgebraucht ist, was zur vollständigen Darstellung der Galgenfigur führt.
-Viel Spaß beim Erkunden und Mitmachen bei diesem unterhaltsamen Wortspiel!
+Dieses Projekt ermöglichte mir, das Gelernte kreativ umzusetzen und ein interaktives Spiel zu entwickeln.
 
+## Hangman-Spiel
 
+Dieses Repository enthält eine computerbasierte Version des klassischen Hangman-Spiels. Hier spielt der menschliche Spieler gegen den Computer, der ein zufälliges Wort auswählt, das es zu erraten gilt. Der Spieler kann zwischen russischen und englischen Wörtern wählen.
 
-___________________________________________________________________________________________________________________________________________________________________________________________________________
+**Spielverlauf:**
+
+1. Wähle die Sprache des Wortes (Russisch oder Englisch).
+2. Rate Buchstaben einzeln.
+3. Der Computer zeigt die Positionen des Buchstabens im Wort an, wenn er korrekt ist, oder zeichnet Teile des Galgens, wenn er falsch ist.
+4. Das Spiel endet, wenn das Wort vollständig erraten wurde oder die Fehlversuche aufgebraucht sind.
+
+Viel Spaß beim Spielen!
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
 ENGLISH VERSION
 
-Hangman Game
+# Hangman Game
 
-This repository features a computer-based implementation of the classic Hangman game, traditionally played by two players.
 
-In this version, a human player competes against the computer, which randomly selects a word for the player to guess. The player can choose to guess either Russian or English words.
+## Motivation
 
-Gameplay:
+The Hangman Game aims to deepen my Java knowledge through practical implementation. After learning basic programming concepts and object-oriented theory, I sought to apply this knowledge in a real-world project.
 
-The player selects the language of the word (Russian or English).
-The player guesses letters one at a time.
-For each guessed letter, the computer will either reveal its positions in the word if correct or incrementally draw parts of the hangman if incorrect.
-The game continues until the player either successfully guesses the entire word or exhausts their allowed number of incorrect guesses, resulting in the completion of the hangman figure.
-Enjoy exploring and participating in this entertaining word game!
+In the Hangman Game, I combined and enhanced various aspects of Java, including:
 
+- **Java Core:** Application of basic syntax, control structures, and data structures.
+- **Error Handling:** Improved robustness in handling user inputs and errors.
+- **Object-Oriented Programming:** Creation and management of classes and objects.
+- **Problem-Solving Skills:** Strengthened analytical thinking by developing a functioning game.
+
+This project allowed me to creatively apply what I've learned and develop an interactive game.
+
+## Hangman Game
+
+This repository features a computer-based implementation of the classic Hangman game. In this version, a human player competes against the computer, which randomly selects a word to guess. The player can choose between Russian and English words.
+
+**Gameplay:**
+
+1. Select the language of the word (Russian or English).
+2. Guess letters one at a time.
+3. The computer will reveal the letter's positions in the word if correct or draw parts of the hangman if incorrect.
+4. The game continues until the word is guessed or the allowed number of incorrect guesses is exhausted.
+
+Enjoy playing!
