@@ -33,7 +33,7 @@ Folge diesen Schritten, um das Hangman-Spiel auszuführen:
 
 1. **Repository klonen:**
 
-   `git clone https://github.com/username/hangman-game.git`
+   `git clone https://github.com/Gula1507/HangmanGame.git`
 
 2. **In das Projektverzeichnis wechseln:**
 
